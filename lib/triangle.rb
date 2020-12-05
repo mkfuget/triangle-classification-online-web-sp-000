@@ -11,7 +11,9 @@ cclass Triangle
     if(a==b && b==c)
       return :equilateral
     elsif(a==b || b==c || a==c)
-    return :
+      return :isosceles
+    else  
+      return 
 
     
 end
