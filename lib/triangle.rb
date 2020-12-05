@@ -13,10 +13,7 @@ class Triangle
     c = @side_c
 
     if(a+b>=c || a+c>=b || b+c>=a)
-      begin
-        raise TriangleError
-        puts error.message
-      end
+      raise TriangleError
     end
     if(a==b && b==c)
       return :equilateral
