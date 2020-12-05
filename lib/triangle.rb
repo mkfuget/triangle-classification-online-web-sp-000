@@ -8,12 +8,18 @@ cclass Triangle
   end
   
   def kind 
+    if(a+b>=c || a+c>=b || b+c>=a)
+      
     if(a==b && b==c)
       return :equilateral
     elsif(a==b || b==c || a==c)
       return :isosceles
     else  
-      return 
+      return :scalene
+    end 
+    
+
+
 
     
 end
