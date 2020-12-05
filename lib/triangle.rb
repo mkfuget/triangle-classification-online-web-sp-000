@@ -24,12 +24,6 @@ cclass Triangle
     end 
     
   class TriangleError < StandardError
-    def message 
+    def message "invalud triangle dimensions"
   end
-
-    
-
-
-
-    
 end
