@@ -12,7 +12,7 @@ class Triangle
     b = @side_b
     c = @side_c
 
-    if(a+b>=c || a+c>=b || b+c>=a)
+    if(a+b<=c || a+c<=b || b+c<=a)
       raise TriangleError
     end
     if(a==b && b==c)
