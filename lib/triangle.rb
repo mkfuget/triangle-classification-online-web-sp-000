@@ -9,6 +9,9 @@ cclass Triangle
   
   def kind 
     if(a==b && b==c)
-      return 
+      return :equilateral
+    elsif(a==b || b==c || a==c)
+    return :
+
     
 end
