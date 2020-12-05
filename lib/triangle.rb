@@ -9,7 +9,12 @@ cclass Triangle
   
   def kind 
     if(a+b>=c || a+c>=b || b+c>=a)
-      
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+    end
     if(a==b && b==c)
       return :equilateral
     elsif(a==b || b==c || a==c)
@@ -19,7 +24,7 @@ cclass Triangle
     end 
     
   class TriangleError < StandardError
-    # triangle error code
+    def message 
   end
 
     
