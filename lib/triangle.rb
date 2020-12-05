@@ -9,6 +9,9 @@ class Triangle
   
   def kind 
     a = @side_a
+    b = @side_b
+    c = @side_c
+
     if(a+b>=c || a+c>=b || b+c>=a)
       begin
         raise TriangleError
